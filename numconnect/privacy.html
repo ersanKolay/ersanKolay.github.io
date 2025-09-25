@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NumConnect - Privacy Policy</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            margin-top: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 20px 0;
+        }
+
+        .app-icon {
+            width: 80px;
+            height: 80px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 20px;
+            margin: 0 auto 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 32px;
+            font-weight: bold;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.2em;
+        }
+
+        .last-updated {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            text-align: center;
+            border-left: 4px solid #667eea;
+        }
+
+        .privacy-summary {
+            background: linear-gradient(135deg, #00b09b 0%, #96c93d 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 15px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .privacy-summary h3 {
+            margin-bottom: 15px;
+            color: white;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            color: #444;
+            font-size: 1.8em;
+            margin-bottom: 20px;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .section h3 {
+            color: #555;
+            font-size: 1.3em;
+            margin: 25px 0 15px 0;
+        }
+
+        .content-block {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            margin-bottom: 20px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+            border-left: 4px solid #667eea;
+        }
+
+        .data-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        .data-table th,
+        .data-table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #eee;
+        }
+
+        .data-table th {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            font-weight: 600;
+        }
+
+        .data-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .highlight-box {
+            background: #e3f2fd;
+            border: 1px solid #2196f3;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .highlight-box.green {
+            background: #e8f5e8;
+            border-color: #4caf50;
+        }
+
+        .highlight-box.red {
+            background: #ffebee;
+            border-color: #f44336;
+        }
+
+        .rights-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .rights-list li {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .rights-list li:before {
+            content: "🔒";
+            position: absolute;
+            left: 0;
+            font-size: 1.2em;
+        }
+
+        .rights-list li:last-child {
+            border-bottom: none;
+        }
+
+        .contact-info {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .contact-info h3 {
+            margin-bottom: 15px;
+            color: white;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .footer {
+            text-align: center;
+            color: #666;
+            padding: 20px 0;
+            margin-top: 40px;
+            border-top: 1px solid #eee;
+            font-size: 0.9em;
+        }
+
+        .footer a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                margin: 20px;
+                padding: 15px;
+                border-radius: 15px;
+            }
+            
+            h1 {
+                font-size: 2em;
+            }
+            
+            .section h2 {
+                font-size: 1.5em;
+            }
+
+            .data-table {
+                font-size: 0.9em;
+            }
+
+            .data-table th,
+            .data-table td {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="app-icon">🔢</div>
+            <h1>NumConnect</h1>
+            <p class="subtitle">Privacy Policy</p>
+        </div>
+
+        <div class="last-updated">
+            <strong>Effective Date:</strong> December 2024 | <strong>Last Updated:</strong> December 2024
+        </div>
+
+        <div class="privacy-summary">
+            <h3>🛡️ Privacy at a Glance</h3>
+            <p><strong>TL;DR:</strong> NumConnect respects your privacy. We don't collect, store, or share any personal information. Your game progress stays on your device, and we don't use analytics, ads, or tracking. It's that simple.</p>
+        </div>
+
+        <div class="section">
+            <h2>🔍 Information We Collect</h2>
+            <div class="content-block">
+                <div class="highlight-box green">
+                    <h3>✅ The Short Answer: Nothing</h3>
+                    <p>NumConnect is designed with privacy as a core principle. We don't collect any personal information, usage data, or analytics from users.</p>
+                </div>
+
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Data Type</th>
+                            <th>Do We Collect It?</th>
+                            <th>Details</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Personal Information</td>
+                            <td><strong>NO</strong></td>
+                            <td>No names, emails, phone numbers, or addresses</td>
+                        </tr>
+                        <tr>
+                            <td>Device Information</td>
+                            <td><strong>NO</strong></td>
+                            <td>No device IDs, advertising IDs, or hardware info</td>
+                        </tr>
+                        <tr>
+                            <td>Location Data</td>
+                            <td><strong>NO</strong></td>
+                            <td>We don't request or access location services</td>
+                        </tr>
+                        <tr>
+                            <td>Usage Analytics</td>
+                            <td><strong>NO</strong></td>
+                            <td>No tracking of how you play or use the app</td>
+                        </tr>
+                        <tr>
+                            <td>Game Progress</td>
+                            <td><strong>LOCAL ONLY</strong></td>
+                            <td>Stored only on your device, never sent anywhere</td>
+                        </tr>
+                        <tr>
+                            <td>Crash Reports</td>
+                            <td><strong>NO</strong></td>
+                            <td>We don't collect automatic crash reports</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>💾 How Your Data is Stored</h2>
+            <div class="content-block">
+                <h3>Local Storage Only</h3>
+                <p>All your game data is stored locally on your device using iOS/Android's standard app storage mechanisms:</p>
+                
+                <ul class="rights-list">
+                    <li>Game progress and puzzle completion statistics</li>
+                    <li>Settings and preferences</li>
+                    <li>Achievement unlocks</li>
+                    <li>Best completion times (if implemented)</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <h4>🔒 What This Means for You:</h4>
+                    <p>• Your data never leaves your device<br>
+                    • We can't see your progress or gameplay<br>
+                    • If you delete the app, all data is permanently deleted<br>
+                    • Data cannot be transferred between devices</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🚫 What We DON'T Do</h2>
+            <div class="content-block">
+                <div class="highlight-box red">
+                    <h3>Zero Data Collection Promise</h3>
+                    <p>We explicitly do NOT:</p>
+                </div>
+
+                <ul class="rights-list">
+                    <li>Track your gameplay or puzzle-solving patterns</li>
+                    <li>Collect any personally identifiable information</li>
+                    <li>Use third-party analytics services (Google Analytics, Facebook, etc.)</li>
+                    <li>Show advertisements or collect advertising data</li>
+                    <li>Access your contacts, photos, or other apps</li>
+                    <li>Use your camera, microphone, or location services</li>
+                    <li>Send data to any external servers or services</li>
+                    <li>Create user profiles or behavioral tracking</li>
+                    <li>Share data with third parties, partners, or advertisers</li>
+                    <li>Sell or monetize your data in any way</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🔐 Data Security</h2>
+            <div class="content-block">
+                <h3>Security Through Minimalism</h3>
+                <p>The best way to protect your data is not to collect it in the first place. Since NumConnect operates entirely offline and doesn't collect personal information, there are no servers to hack or databases to breach.</p>
+
+                <h3>Local Data Protection</h3>
+                <p>Your local game data is protected by your device's built-in security features:</p>
+                <ul class="rights-list">
+                    <li>iOS App Sandbox protection (iOS devices)</li>
+                    <li>Android app isolation (Android devices)</li>
+                    <li>Device encryption (if enabled by you)</li>
+                    <li>Secure app storage provided by the operating system</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>👶 Children's Privacy (COPPA Compliance)</h2>
+            <div class="content-block">
+                <h3>Safe for All Ages</h3>
+                <p>NumConnect is designed to be safe for users of all ages, including children under 13. Because we don't collect any personal information whatsoever, we are fully compliant with COPPA (Children's Online Privacy Protection Act) and similar international regulations.</p>
+
+                <div class="highlight-box green">
+                    <h4>✅ Child Safety Features:</h4>
+                    <p>• No data collection from any users, including children<br>
+                    • No online interactions or social features<br>
+                    • No advertisements or external links<br>
+                    • No ability to make purchases within the app<br>
+                    • No access to device features beyond basic app functionality</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🌍 International Data Transfers</h2>
+            <div class="content-block">
+                <h3>No Transfers = No Concerns</h3>
+                <p>Since NumConnect doesn't collect or transmit any personal data, there are no international data transfers to worry about. Your data stays on your device, in your country, under your control.</p>
+
+                <p>This approach ensures compliance with international privacy regulations including:</p>
+                <ul class="rights-list">
+                    <li>GDPR (General Data Protection Regulation) - European Union</li>
+                    <li>CCPA (California Consumer Privacy Act) - California, USA</li>
+                    <li>PIPEDA (Personal Information Protection and Electronic Documents Act) - Canada</li>
+                    <li>Privacy Act 1988 - Australia</li>
+                    <li>And other similar privacy laws worldwide</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🔄 App Updates and Privacy</h2>
+            <div class="content-block">
+                <h3>Continuing Privacy Protection</h3>
+                <p>When we release updates to NumConnect:</p>
+
+                <ul class="rights-list">
+                    <li>Your existing local data remains private and untouched</li>
+                    <li>No new data collection will be introduced without explicit notice</li>
+                    <li>Privacy protections will be maintained or enhanced</li>
+                    <li>Any material changes to this policy will be clearly communicated</li>
+                </ul>
+
+                <div class="highlight-box">
+                    <p><strong>Our Promise:</strong> If we ever decide to change our zero-data-collection approach, we will provide prominent notice and likely release it as a completely separate app, allowing you to continue using the privacy-focused version.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>⚖️ Your Privacy Rights</h2>
+            <div class="content-block">
+                <h3>Rights You Have (Even Though We Don't Collect Data)</h3>
+                <p>Even though we don't collect personal data, here are the rights you would have if we did:</p>
+
+                <ul class="rights-list">
+                    <li><strong>Right to Access:</strong> Request what data we have (Answer: None)</li>
+                    <li><strong>Right to Rectification:</strong> Correct inaccurate data (N/A)</li>
+                    <li><strong>Right to Erasure:</strong> Delete your data (N/A - no data to delete)</li>
+                    <li><strong>Right to Portability:</strong> Export your data (N/A)</li>
+                    <li><strong>Right to Object:</strong> Opt out of processing (N/A)</li>
+                    <li><strong>Right to Restriction:</strong> Limit data processing (N/A)</li>
+                </ul>
+
+                <p style="margin-top: 20px;"><strong>The Reality:</strong> Since we don't collect any personal data, there's nothing to access, correct, delete, or transfer. Your privacy is protected by design.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📱 Third-Party Services</h2>
+            <div class="content-block">
+                <h3>App Store Interactions</h3>
+                <p>NumConnect is distributed through official app stores (Apple App Store, Google Play Store). These platforms may collect their own analytics about app downloads and updates, which is outside our control and governed by their privacy policies:</p>
+
+                <ul class="rights-list">
+                    <li><a href="https://www.apple.com/privacy/" style="color: #667eea;">Apple Privacy Policy</a></li>
+                    <li><a href="https://policies.google.com/privacy" style="color: #667eea;">Google Privacy Policy</a></li>
+                </ul>
+
+                <h3>No Other Third-Party Services</h3>
+                <p>NumConnect does not integrate with any other third-party services, SDKs, or analytics platforms.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>📧 Contact and Data Requests</h2>
+            <div class="content-block">
+                <h3>Questions About Your Privacy</h3>
+                <p>If you have questions about this privacy policy or want to confirm that we don't have any data about you, please contact us. We're happy to provide written confirmation that no personal data is collected or stored.</p>
+
+                <div class="highlight-box">
+                    <h4>📝 Data Request Process:</h4>
+                    <p>1. Email us at the address below<br>
+                    2. We'll respond within 48 hours<br>
+                    3. Confirmation: "We have no data about you to provide, access, correct, or delete."</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="section">
+            <h2>🔄 Changes to This Policy</h2>
+            <div class="content-block">
+                <h3>Policy Updates</h3>
+                <p>We may update this privacy policy from time to time. Changes will be posted on this page with an updated "Last Modified" date. Significant changes will be communicated through:</p>
+
+                <ul class="rights-list">
+                    <li>App update notes in the app store</li>
+                    <li>Prominent notice within the app (if applicable)</li>
+                    <li>Email notification (if we had your email, which we don't)</li>
+                </ul>
+
+                <p style="margin-top: 20px;"><strong>Current Version:</strong> This is version 1.0 of our privacy policy, effective December 2024.</p>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="contact-info">
+                <h3>📧 Privacy Contact Information</h3>
+                <p>For privacy-related questions, concerns, or requests:</p>
+                <p style="margin: 15px 0;">
+                    <strong>Email:</strong> <a href="mailto:ersankolay@gmail.com">ersankolay@gmail.com</a><br>
+                </p>
+                <p style="font-size: 0.9em; opacity: 0.9;">
+                    We typically respond to privacy inquiries within 24-48 hours.
+                </p>
+            </div>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2024 NumConnect. All rights reserved.</p>
+            <p style="margin-top: 10px;">
+                <a href="index.html">Support Center</a> | 
+                <strong>Privacy Policy</strong> | 
+                <a href="content-rights.html">Content Rights</a>
+            </p>
+        </div>
+    </div>
+</body>
+</html>
